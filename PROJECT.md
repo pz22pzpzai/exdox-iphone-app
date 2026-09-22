@@ -7,6 +7,7 @@ This is the iPhone-only Exdox mobile application. It is derived from the shared 
 Production website: `https://exdox.co.uk`  
 Production API: `https://hz2zkm6jkf.execute-api.eu-west-2.amazonaws.com/prod`  
 Production extraction endpoint: `https://hz2zkm6jkf.execute-api.eu-west-2.amazonaws.com/prod/api/v1/expenses/process`
+GitHub repository: `https://github.com/pz22pzpzai/exdox-iphone-app`
 
 ## Main files
 
@@ -41,3 +42,8 @@ Production extraction endpoint: `https://hz2zkm6jkf.execute-api.eu-west-2.amazon
 - Camera, photo library, document picker and Face ID permission descriptions are configured.
 - All existing Exdox production API clients are retained.
 - Business owners can initiate authenticated permanent workspace/account deletion from Settings using the production `DELETE /account` endpoint.
+- TypeScript validation and the production-mode iOS JavaScript bundle pass.
+- Expo Doctor passes its local project, dependency, SDK compatibility, peer dependency and store-submission checks; its remote schema lookup can fail on this Windows network before TLS negotiation.
+- All mobile API route definitions match the backend infrastructure template, and unauthenticated CORS preflight requests reached the production login, receipts, claims, sales workspace, settings, account deletion and extraction routes successfully on 2026-09-22.
+- The App Store icon is 1024 by 1024 pixels and fully opaque.
+- Signed EAS/TestFlight work requires an Expo account and an active Apple Developer Program account. The local machine did not have an Expo session on 2026-09-22; GitHub-based Expo onboarding reached the final account-creation step and awaits the account holder's explicit confirmation.
