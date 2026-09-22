@@ -1,0 +1,48 @@
+export const colors = {
+  ink: '#111827',
+  mutedInk: '#6B7280',
+  teal: '#1D4ED8',
+  tealDeep: '#102B66',
+  sand: '#E7ECF7',
+  sandSoft: '#F3F5F9',
+  ivory: '#FFFFFF',
+  white: '#FFFFFF',
+  border: '#D8E0ED',
+  success: '#2E8A57',
+  amber: '#D9A441',
+  slate: '#9AA4B2',
+  cardShadow: 'rgba(16, 43, 102, 0.08)',
+  royalBlue: '#2458D3',
+  royalBlueDark: '#102B66',
+  nearBlack: '#111111',
+  mutedText: '#687385',
+  band: '#F2F4F7',
+  divider: '#ECEEF2',
+  lightBorder: '#D9DEE7',
+  dotMint: '#2EC4A6',
+  dateText: '#667085',
+  amountText: '#5E6675',
+  pillAmber: '#FFD98A',
+  pillBlue: '#DCE8FF',
+  pillGrey: '#E5E7EB',
+  pillGreen: '#D9F3E4',
+  softBlueGrey: '#CBD5E1',
+  midBlueGrey: '#475569',
+  tabMuted: '#777C87',
+  avatarMint: '#BEEDE4',
+};
+
+export const spacing = {
+  xs: 6,
+  sm: 10,
+  md: 16,
+  lg: 20,
+  xl: 28,
+};
+
+export const radius = {
+  sm: 12,
+  md: 18,
+  lg: 28,
+  pill: 999,
+};

@@ -1,0 +1,63 @@
+{
+  "expo": {
+    "name": "Exdox",
+    "slug": "exdox-iphone-app",
+    "description": "Capture, review and manage business expenses, receipts, sales and claims with Exdox.",
+    "version": "1.0.27",
+    "platforms": [
+      "ios"
+    ],
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "scheme": "exdox",
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "uk.co.exdox.mobile",
+      "buildNumber": "1",
+      "config": {
+        "usesNonExemptEncryption": false
+      },
+      "infoPlist": {
+        "NSCameraUsageDescription": "Use the camera to capture receipts and invoices.",
+        "NSPhotoLibraryUsageDescription": "Use the photo library to import receipt and invoice images.",
+        "NSPhotoLibraryAddUsageDescription": "Save captured receipt and invoice images to your photo library when enabled.",
+        "NSFaceIDUsageDescription": "Use Face ID to sign in securely to Exdox."
+      },
+      "privacyManifests": {
+        "NSPrivacyTracking": false,
+        "NSPrivacyTrackingDomains": []
+      }
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Allow Exdox to use the camera to capture receipts and invoices.",
+          "microphonePermission": "Allow Exdox to use the microphone when capturing media."
+        }
+      ],
+      "expo-document-picker",
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Allow Exdox to import receipt and invoice images from your photo library."
+        }
+      ],
+      [
+        "expo-secure-store",
+        {
+          "faceIDPermission": "Allow Exdox to use Face ID for secure sign-in."
+        }
+      ],
+      "expo-status-bar"
+    ],
+    "extra": {
+      "appDisplayName": "Exdox",
+      "expensesApiUrl": "https://hz2zkm6jkf.execute-api.eu-west-2.amazonaws.com/prod/api/v1/expenses/process"
+    }
+  }
+}
