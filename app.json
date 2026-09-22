@@ -57,7 +57,11 @@
     ],
     "extra": {
       "appDisplayName": "Exdox",
-      "expensesApiUrl": "https://hz2zkm6jkf.execute-api.eu-west-2.amazonaws.com/prod/api/v1/expenses/process"
-    }
+      "expensesApiUrl": "https://hz2zkm6jkf.execute-api.eu-west-2.amazonaws.com/prod/api/v1/expenses/process",
+      "eas": {
+        "projectId": "36255ac4-857b-4088-9129-bdca46016141"
+      }
+    },
+    "owner": "pz22pzpz"
   }
 }
